@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 ## sstreamlit APP
 st.set_page_config(page_title="LangChain: Summarize Text From YT or Website", page_icon="🦜")
 st.title("🦜 LangChain: Summarize Text From YT or Website")
+st.title(" kindly Enter the Api key App is Running Correctly")
 st.subheader('Summarize URL')
 
 
@@ -45,7 +46,7 @@ if st.button("Summarize the Content from YT or Website"):
                 if "youtube.com" in generic_url:
                     loader=YoutubeLoader.from_youtube_url(generic_url,add_video_info=True)
                 else:
-                    # 🔍 Scrape content using BeautifulSoup
+                    # Scrape content using BeautifulSoup
                     headers = {
                         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
                     }
