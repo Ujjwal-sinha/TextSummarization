@@ -14,8 +14,6 @@ st.title(" kindly Enter the Api key App is Running Correctly")
 st.subheader('Summarize URL')
 
 
-
-
 ## Get the Groq API Key and url(YT or website)to be summarized
 with st.sidebar:
     groq_api_key=st.text_input("Groq API Key",value="",type="password")
